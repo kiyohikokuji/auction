@@ -3,4 +3,9 @@ class ItemsController < ApplicationController
     #Itemというモデルに対してfindメソッドでidを検索させている
     @item = Item.find(params[:id])
   end
+
+  def index
+  @items = Item.all
+end
+
 end
